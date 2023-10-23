@@ -8,11 +8,12 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.blocnotas"
-        minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        applicationId "com.codingwithme.notesapp"
+        minSdkVersion 22
+        targetSdkVersion 31
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
