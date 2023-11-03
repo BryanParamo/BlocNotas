@@ -13,11 +13,26 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.blocnotas.R
-import com.example.blocnotas.data.noteDatabase
-import com.example.blocnotas.model.Note
-import com.example.blocnotas.note_adapter
-import com.example.blocnotas.task_adapter
+import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.proyecto_notas.R
+import com.example.proyecto_notas.data.noteDatabase
+import com.example.proyecto_notas.model.Note
+import com.example.proyecto_notas.note_adapter
+import com.example.proyecto_notas.task_adapter
 import kotlinx.coroutines.launch
 
 
@@ -25,8 +40,8 @@ class note_list : Fragment() {
 
     lateinit var notes : List<Note>
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
 
         val root = inflater.inflate(R.layout.fragment_note_list, container, false)

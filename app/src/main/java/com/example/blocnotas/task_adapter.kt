@@ -16,8 +16,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
-import com.example.blocnotas.data.noteDatabase
-import com.example.blocnotas.model.Note
+import com.example.proyecto_notas.data.noteDatabase
+import com.example.proyecto_notas.model.Note
 import kotlinx.coroutines.launch
 
 class task_adapter(var tasks: List<Note>): RecyclerView.Adapter<task_adapter.ViewHolder>(){
@@ -72,10 +72,10 @@ class task_adapter(var tasks: List<Note>): RecyclerView.Adapter<task_adapter.Vie
             for(it in lista){
                 val intent  = Intent(holder.name.context.applicationContext, Notification::class.java)
                 val pendingIntent = PendingIntent.getBroadcast(
-                    holder.name.context.applicationContext,
-                    it.id,
-                    intent,
-                    PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+                        holder.name.context.applicationContext,
+                        it.id,
+                        intent,
+                        PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
                 )
                 alarmManager.cancel(pendingIntent)
             }
