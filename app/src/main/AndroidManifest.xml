@@ -6,7 +6,7 @@
     <uses-feature android:name="android.hardware.camera" android:required="true"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/iconcyberpunk_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BlocNotas"
+        android:theme="@style/Theme.Proyecto_notas"
         tools:targetApi="31">
 
         <provider
@@ -35,7 +35,7 @@
             android:exported="true"
             />
         <activity
-            android:name="com.example.blocnotas.MainActivity"
+            android:name="com.example.proyecto_notas.MainActivity"
             android:exported="true"
             >
             <intent-filter>

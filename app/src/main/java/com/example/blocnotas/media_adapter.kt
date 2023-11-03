@@ -1,4 +1,4 @@
-package com.example.blocnotas
+package com.example.proyecto_notas
 
 import android.media.MediaPlayer
 import android.net.Uri

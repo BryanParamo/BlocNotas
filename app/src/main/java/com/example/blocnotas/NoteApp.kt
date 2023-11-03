@@ -1,5 +1,3 @@
-package com.example.blocnotas
-
 package com.example.proyecto_notas
 
 import android.app.Application

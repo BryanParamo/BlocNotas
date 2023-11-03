@@ -1,4 +1,4 @@
-package com.example.blocnotas.data
+package com.example.proyecto_notas.data
 
 import androidx.room.Dao
 import androidx.room.Delete

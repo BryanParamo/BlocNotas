@@ -1,4 +1,5 @@
-package com.example.blocnotas
+package com.example.proyecto_notas
+
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -46,8 +47,8 @@ class edit_task : Fragment() {
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         var seleccionado = 0
@@ -128,10 +129,10 @@ class edit_task : Fragment() {
             for(it in lista){
                 val intent  = Intent(requireActivity().applicationContext, Notification::class.java)
                 val pendingIntent = PendingIntent.getBroadcast(
-                    requireActivity().applicationContext,
-                    it.id,
-                    intent,
-                    PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+                        requireActivity().applicationContext,
+                        it.id,
+                        intent,
+                        PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
                 )
                 alarmManager.cancel(pendingIntent)
             }
@@ -197,27 +198,27 @@ class edit_task : Fragment() {
 
 
         val timeSetListener =
-            OnTimeSetListener { view, hourOfDay, minute ->
-                selected_hour = hourOfDay
-                selected_minute = minute
-                mHour = hourOfDay
-                mMinute = minute
-                if(seleccionado == 0){
-                    txt_hour.setText("$hourOfDay:$minute")
+                OnTimeSetListener { view, hourOfDay, minute ->
+                    selected_hour = hourOfDay
+                    selected_minute = minute
+                    mHour = hourOfDay
+                    mMinute = minute
+                    if(seleccionado == 0){
+                        txt_hour.setText("$hourOfDay:$minute")
+                    }
+
+                    if (container != null) {
+                        DatePickerDialog(this@edit_task.requireContext(),
+                                dateSetListener,
+
+                                cal.get(Calendar.YEAR),
+                                cal.get(Calendar.MONTH),
+                                cal.get(Calendar.DAY_OF_MONTH)).show()
+
+                    }
+
+
                 }
-
-                if (container != null) {
-                    DatePickerDialog(this@edit_task.requireContext(),
-                        dateSetListener,
-
-                        cal.get(Calendar.YEAR),
-                        cal.get(Calendar.MONTH),
-                        cal.get(Calendar.DAY_OF_MONTH)).show()
-
-                }
-
-
-            }
 
 
 
@@ -225,7 +226,7 @@ class edit_task : Fragment() {
             override fun onClick(view: View) {
                 seleccionado = 0
                 TimePickerDialog(this@edit_task.requireContext(),timeSetListener
-                    , mHour as Int, mMinute as Int,true).show()
+                        , mHour as Int, mMinute as Int,true).show()
             }
         })
 
@@ -233,7 +234,7 @@ class edit_task : Fragment() {
             override fun onClick(view: View) {
                 seleccionado = 1
                 TimePickerDialog(this@edit_task.requireContext(),timeSetListener
-                    , mHour as Int, mMinute as Int,true).show()
+                        , mHour as Int, mMinute as Int,true).show()
             }
 
         })
@@ -272,17 +273,17 @@ class edit_task : Fragment() {
         intent.putExtra(messageExtra,message)
 
         val pendingIntent = PendingIntent.getBroadcast(
-            requireActivity().applicationContext,
-            id,
-            intent,
-            PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+                requireActivity().applicationContext,
+                id,
+                intent,
+                PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
         )
         var alarmManager =  requireActivity().getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val time = getTime()
         alarmManager.setExactAndAllowWhileIdle(
-            AlarmManager.RTC_WAKEUP,
-            time,
-            pendingIntent
+                AlarmManager.RTC_WAKEUP,
+                time,
+                pendingIntent
         )
         showAlert(time,title,message)
     }
