@@ -1,22 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NotesApp</string>
-    <string name="notes">My Notes</string>
-    <string name="notes_title">Notes Title</string>
-    <string name="notes_sub_title">Notes Sub Title</string>
-    <string name="notes_desc">Enter Note Here</string>
-    <string name="web_url">Enter Web Url</string>
-    <string name="notes">Mi Bloc</string>
-    <string name="notes_title">Titulo de la nota</string>
-    <string name="notes_sub_title">Subtitulo</string>
-    <string name="notes_desc">Ingresa tu nota aqui</string>
-    <string name="web_url">Ingresa una url de web</string>
-    <string name="ok">Ok</string>
-    <string name="cancel">Cancel</string>
-    <string name="storage_permission_text">This app needs access to your storage.</string>
-    <string name="search">Search your notes</string>
-    <string name="cancel">Cancelar</string>
-    <string name="storage_permission_text">Necesitamos que nos proporciones acceso al almacenamiento para guardar las notas :D</string>
-    <string name="search">Buscar notas</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">App Notas</string>
+    <string name="add_note">Add nota o Tarea</string>
+    <string name="note_list">Show note list</string>
+    <string name="task_list">"Show task list "</string>
+    <string name="Welcome">:D</string>
+    <string name="note_title">Title</string>
+    <string name="note_description">Description</string>
+    <string name="arch_description">Description of File</string>
+    <string name="add_media">Add files</string>
+    <string name="add_archive">Add file</string>
+    <string name="note_type">Note type</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Next">Next</string>
+    <string name="btn_date">Choose hour and date</string>
+    <string name="add_reminder">Add reminder</string>
+    <string name="done">End</string>
+    <string name="note_list_title">Note list</string>
+    <string name="completed">Done</string>
+    <string name="home">Home</string>
+    <string name="watch__media">Show media</string>
+    <string name="title_note_media">This is the associated media for the following note</string>
+    <string name="back">Back</string>
+    <string name="add_video">Add video</string>
+    <string name="add_image">Add image</string>
+    <string name="add_audio">Add audio</string>
+    <string name="play">Play</string>
+    <string name="add_file">Add anything from smartphone</string>
+    <string name="task_title">Task title</string>
+    <string name="task_list1">Task list</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="type">
+        <item>Select</item>
+        <item>Task</item>
+        <item>Note</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Seleccione</item>
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
 </resources>
