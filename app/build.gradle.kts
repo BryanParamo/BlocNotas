@@ -1,14 +1,12 @@
-apply plugin: 'com.android.application'
-
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-kapt'
-
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
 
     android {
-        compileSdkVersion 33
+        compileSdkVersion =33
         defaultConfig {
-            applicationId 'com.example.proyecto_notas'
+            applicationId ="com.example.proyecto_notas"
             multiDexEnabled true
             minSdkVersion 19
             targetSdkVersion 33
