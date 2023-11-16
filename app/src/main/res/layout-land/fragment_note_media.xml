@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#171C26">
+        android:background="#37435C">
 
         <TextView
             android:id="@+id/textView7"
@@ -46,7 +46,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/btn_redondo"
-            app:backgroundTint="#8BC34A"
+            app:backgroundTint="#9C27B0"
             app:icon="@drawable/abc_vector_test"
             app:iconSize="36dp"
             app:layout_constraintStart_toStartOf="parent"

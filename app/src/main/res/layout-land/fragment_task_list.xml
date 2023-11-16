@@ -50,7 +50,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/btn_redondo"
-            app:backgroundTint="#8BC34A"
+            app:backgroundTint="#9C27B0"
             app:icon="@drawable/abc_vector_test"
             app:iconSize="40dp"
             app:layout_constraintStart_toStartOf="parent"

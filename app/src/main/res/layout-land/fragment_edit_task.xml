@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary">
+        android:background="#37435C">
 
         <Button
             android:id="@+id/btn_cancel_edit_task"
@@ -17,7 +17,7 @@
             android:layout_marginStart="35dp"
             android:layout_marginTop="23dp"
             android:background="@drawable/btn_redondo"
-            app:backgroundTint="#8BC34A"
+            app:backgroundTint="#9C27B0"
             app:icon="@drawable/abc_vector_test"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="36dp"
             android:background="@drawable/btn_redondo"
-            app:backgroundTint="#8BC34A"
+            app:backgroundTint="#9C27B0"
             app:icon="@android:drawable/ic_menu_send"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btn_cancel_edit_task" />

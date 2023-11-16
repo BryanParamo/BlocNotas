@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="search">Search</string>
+    <string name="add_note">+Task</string>
+    <string name="note_list">Show my note list</string>
+    <string name="task_list">Show my task list</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Welcome">:D</string>
+    <string name="note_title">Title</string>
+    <string name="note_description">Description</string>
+    <string name="arch_description">File Description</string>
+    <string name="questionAdd_media">Would you like to add multimedia?</string>
+    <string name="add_media">Attach files</string>
+    <string name="add_archive">Attach file</string>
+    <string name="note_type">Note type</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Next">Next</string>
+    <string name="btn_date">Choose date and time</string>
+    <string name="add_reminder">Attach reminder</string>
+    <string name="question_add_reminder">Would you like to add a reminder?</string>
+    <string name="done">Finish</string>
+    <string name="note_list_title">Note list</string>
+    <string name="completed">Completed</string>
+    <string name="home">Home</string>
+    <string name="watch__media">Show multimedia</string>
+    <string name="title_note_media">This is the multimedia you added for:</string>
+    <string name="back">Back</string>
+    <string name="add_video">Add video</string>
+    <string name="add_image">Add image</string>
+    <string name="add_audio">Add audio</string>
+    <string name="play">Play</string>
+    <string name="add_file">Add file from phone</string>
+    <string name="task_title">Task title</string>
+    <string name="task_list1">Task list</string>
+    <string-array name="type">
+        <item>Select</item>
+        <item>Task</item>
+        <item>Note</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Select</item>
+        <item>Spanish</item>
+        <item>English</item>
+    </string-array>
+</resources>
