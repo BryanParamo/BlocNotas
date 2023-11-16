@@ -27,10 +27,10 @@
             android:ems="10"
             android:hint="@string/search"
             android:inputType="textPersonName"
-        android:textColor="#F3F3F3"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintStart_toEndOf="@+id/btn_search"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="#F3F3F3"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/btn_search"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/btn_search"
@@ -39,8 +39,8 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="25dp"
             android:src="@android:drawable/ic_menu_search"
-        app:layout_constraintStart_toEndOf="@+id/btn_home_task_list"
-        app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/btn_home_task_list"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_home_task_list"
@@ -55,6 +55,6 @@
             app:icon="@drawable/abc_vector_test"
             app:layout_constraintBottom_toTopOf="@+id/rv_task_list"
             app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

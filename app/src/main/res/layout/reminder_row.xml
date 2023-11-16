@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="8dp">
+
     <ImageView
         android:id="@+id/btn_delete2"
         android:layout_width="wrap_content"
@@ -14,6 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/reminder_date"
         app:srcCompat="@android:drawable/ic_menu_delete" />
+
     <ImageView
         android:id="@+id/row_clock"
         android:layout_width="32dp"
@@ -22,7 +24,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@android:drawable/ic_menu_recent_history" />
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
 
     <TextView
         android:id="@+id/reminder_time"
@@ -35,6 +37,7 @@
         app:layout_constraintStart_toEndOf="@+id/row_clock"
         app:layout_constraintTop_toTopOf="@+id/row_clock"
         app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/reminder_date"
         android:layout_width="wrap_content"

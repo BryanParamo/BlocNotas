@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.proyecto_notas.Add_note">
+
     <!-- TODO: Update blank fragment layout -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +22,7 @@
             android:textColorHint="#E1DEDE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_title" />
+            app:layout_constraintTop_toBottomOf="@+id/edtxt_title" />
 
         <EditText
             android:id="@+id/edtxt_title"
@@ -34,7 +35,7 @@
             android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/edtxt_description"
-        app:layout_constraintTop_toBottomOf="@+id/btn_cancel" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_cancel" />
 
         <Spinner
             android:id="@+id/sp_note_type"
@@ -42,9 +43,9 @@
             android:layout_height="19dp"
             android:layout_marginTop="10dp"
             android:entries="@array/type"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <TextView
             android:id="@+id/textView6"
@@ -56,7 +57,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_description" />
+            app:layout_constraintTop_toBottomOf="@+id/edtxt_description" />
 
         <Button
             android:id="@+id/btn_cancel"
@@ -79,7 +80,7 @@
             app:backgroundTint="#8BC34A"
             app:icon="@android:drawable/ic_menu_send"
             app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_add_video"
@@ -93,9 +94,8 @@
             app:iconSize="40dp"
             app:iconTint="#000000"
             app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rv_media"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add_image" />
-
+            app:layout_constraintStart_toEndOf="@+id/rv_media"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_image" />
 
         <TextView
             android:id="@+id/textView5"
@@ -107,9 +107,9 @@
             android:textColorHint="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_note_type" />
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_note_type" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_media"
@@ -120,8 +120,8 @@
             android:layout_marginBottom="50dp"
             app:layout_constraintBottom_toTopOf="@+id/btn_add_file"
             app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.018" />
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.018" />
 
         <EditText
             android:id="@+id/file_description"
@@ -133,7 +133,6 @@
             android:hint="@string/arch_description"
             android:inputType="textPersonName"
             android:textColor="@android:color/darker_gray"
-
             android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.519"

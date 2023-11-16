@@ -31,7 +31,6 @@
         android:text="TextView"
         android:textColor="@color/ColorWhite"
         android:textStyle="italic"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintEnd_toStartOf="@+id/btn_media"
         app:layout_constraintStart_toEndOf="@+id/cb_completed"
         app:layout_constraintTop_toBottomOf="@+id/txt_date_hour" />
@@ -67,7 +66,7 @@
         android:textSize="10sp"
         app:layout_constraintEnd_toStartOf="@+id/txt_date_hour"
         app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageView
         android:id="@+id/btn_edit"
@@ -89,7 +88,7 @@
         app:backgroundTint="#171C26"
         app:icon="@android:drawable/ic_menu_zoom"
         app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btn_edit" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit" />
 
     <TextView
         android:id="@+id/textView8"

@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.proyecto_notas.Add_note">
+
     <!-- TODO: Update blank fragment layout -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-
         android:layout_height="match_parent"
         android:background="@color/colorPrimary">
 
@@ -19,10 +19,9 @@
             android:text="@string/note_type"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/file_description" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/file_description" />
 
         <EditText
             android:id="@+id/edtxt_description"
@@ -33,26 +32,23 @@
             android:ems="10"
             android:hint="@string/note_description"
             android:inputType="textPersonName"
-
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rv_media" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rv_media" />
 
         <EditText
             android:id="@+id/edtxt_title"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
-
             android:ems="10"
             android:hint="@string/note_title"
             android:inputType="textPersonName"
-
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/btn_next"
-        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
-        tools:layout_editor_absoluteY="23dp" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/btn_next"
+            app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+            tools:layout_editor_absoluteY="23dp" />
 
         <Button
             android:id="@+id/btn_add_image"
@@ -61,12 +57,11 @@
             android:layout_marginBottom="108dp"
             android:background="@drawable/btn_redondo"
             android:textSize="10dp"
-
-        app:icon="@android:drawable/ic_menu_camera"
-        app:iconSize="40dp"
-        app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_add_video" />
+            app:icon="@android:drawable/ic_menu_camera"
+            app:iconSize="40dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_add_video" />
 
         <Spinner
             android:id="@+id/sp_note_type"
@@ -74,9 +69,9 @@
             android:layout_height="19dp"
             android:layout_marginTop="12dp"
             android:entries="@array/type"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <Button
             android:id="@+id/btn_cancel"
@@ -88,7 +83,7 @@
             app:backgroundTint="#8BC34A"
             app:icon="@drawable/abc_vector_test"
             app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_next"
@@ -108,11 +103,11 @@
             android:layout_marginBottom="108dp"
             android:background="@drawable/btn_redondo"
             android:textSize="10dp"
-        app:icon="@android:drawable/presence_video_busy"
-        app:iconSize="40dp"
-        app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            app:icon="@android:drawable/presence_video_busy"
+            app:iconSize="40dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/btn_add_file"
@@ -121,30 +116,27 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/btn_redondo"
             android:textSize="10dp"
-
-        app:icon="@android:drawable/ic_menu_gallery"
-        app:iconSize="40dp"
-        app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconSize="40dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/btn_add_audio"
-
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/btn_redondo"
             android:textSize="10dp"
-        app:icon="@android:drawable/ic_btn_speak_now"
-        app:iconSize="40dp"
-        app:iconTint="#020202"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_add_file" />
+            app:icon="@android:drawable/ic_btn_speak_now"
+            app:iconSize="40dp"
+            app:iconTint="#020202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_add_file" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_media"
-
             android:layout_width="350dp"
             android:layout_height="154dp"
             android:layout_marginStart="4dp"
@@ -167,7 +159,7 @@
             android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtxt_title" />
+            app:layout_constraintTop_toBottomOf="@+id/edtxt_title" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
