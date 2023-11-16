@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Notes</string>
-    <string name="search">Search</string>
+    <string name="app_name">Mis notas</string>
+    <string name="search">Buscar</string>
     <string name="add_note">+</string>
-    <string name="note_list">Show note list</string>
-    <string name="task_list">"Show task list "</string>
+    <string name="note_list">Mostrar lista de notas</string>
+    <string name="task_list">Mostrar lista de tareas</string>
     <string name="Welcome">:D</string>
-    <string name="note_title">Title</string>
-    <string name="note_description">Description</string>
-    <string name="arch_description">Description of File</string>
-    <string name="questionAdd_media">You like to add multimedia?</string>
-    <string name="add_media">Add files</string>
-    <string name="add_archive">Add file</string>
-    <string name="note_type">Note type</string>
-    <string name="Cancel">Cancel</string>
-    <string name="Next">Next</string>
-    <string name="btn_date">Choose hour and date</string>
-    <string name="add_reminder">Add reminder</string>
-    <string name="question_add_reminder">You like to add reminder?</string>
-    <string name="done">End</string>
-    <string name="note_list_title">Note list</string>
-    <string name="completed">Done</string>
+    <string name="note_title">Titulo</string>
+    <string name="note_description">Descripción</string>
+    <string name="arch_description">Descripción del archivo</string>
+    <string name="questionAdd_media">¿Te gustaria agregar multimedia?</string>
+    <string name="add_media">Agregar archivos</string>
+    <string name="add_archive">Agregar archivos</string>
+    <string name="note_type">Tipo de nota</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="Next">Siguiente</string>
+    <string name="btn_date">Elije hora y fecha</string>
+    <string name="add_reminder">Agregar recordatorio</string>
+    <string name="question_add_reminder">¿Quieres agregar un recordatorio?</string>
+    <string name="done">Fin</string>
+    <string name="note_list_title">Lista de notas</string>
+    <string name="completed">Hecho</string>
     <string name="home">Home</string>
-    <string name="watch__media">Show media</string>
-    <string name="title_note_media">This media is asociated with this</string>
-    <string name="back">Back</string>
-    <string name="add_video">Add video</string>
-    <string name="add_image">Add image</string>
-    <string name="add_audio">Add audio</string>
+    <string name="watch__media">Mostrar medios</string>
+    <string name="title_note_media">Este medio esta asociado con</string>
+    <string name="back">Atras</string>
+    <string name="add_video">Agregar video</string>
+    <string name="add_image">Agregar imagen</string>
+    <string name="add_audio">Agregar audio</string>
     <string name="play">Play</string>
-    <string name="add_file">Add anything from smartphone</string>
-    <string name="task_title">Task title</string>
-    <string name="task_list1">Task list</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_file">Agregar cualquier cosa desde tu dispositivo</string>
+    <string name="task_title">Titulo de la tarea</string>
+    <string name="task_list1">Lista de tareas</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
     <string-array name="type">
-        <item>Select</item>
-        <item>Task</item>
-        <item>Note</item>
+        <item>Seleccionar</item>
+        <item>Tarea</item>
+        <item>Nota</item>
     </string-array>
     <string-array name="languages">
         <item>Seleccione</item>

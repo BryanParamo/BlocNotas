@@ -34,9 +34,6 @@
     <string name="add_file">Agregar archivo desde el telefono</string>
     <string name="task_title">Título de tarea</string>
     <string name="task_list1">Lista de tareas</string>
-    <string name="language">Lenguaje</string>
-    <string name="english">Inglés</string>
-    <string name="spanish">Español</string>
     <string-array name="type">
         <item>Seleccione</item>
         <item>Tarea</item>
