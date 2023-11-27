@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenu">
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.example.proyecto_notas.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_add_note"
+            app:destination="@id/add_note" />
+        <action
+            android:id="@+id/action_mainMenu_to_note_list"
+            app:destination="@id/note_list" />
+        <action
+            android:id="@+id/action_mainMenu_to_task_list"
+            app:destination="@id/task_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_note"
+        android:name="com.example.proyecto_notas.Add_note"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_add_note_to_edit_task"
+            app:destination="@id/edit_task" />
+        <action
+            android:id="@+id/action_add_note_to_mainMenu"
+            app:destination="@id/mainMenu" />
+        <action
+            android:id="@+id/action_add_note_to_note_list"
+            app:destination="@id/note_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_task"
+        android:name="com.example.proyecto_notas.edit_task"
+        android:label="fragment_edit_task"
+        tools:layout="@layout/fragment_edit_task" >
+        <action
+            android:id="@+id/action_edit_task_to_add_note"
+            app:destination="@id/add_note" />
+        <action
+            android:id="@+id/action_edit_task_to_task_list"
+            app:destination="@id/task_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_list"
+        android:name="com.example.proyecto_notas.task_list"
+        android:label="fragment_task_list"
+        tools:layout="@layout/fragment_task_list" >
+        <action
+            android:id="@+id/action_task_list_to_mainMenu"
+            app:destination="@id/mainMenu" />
+        <action
+            android:id="@+id/action_task_list_to_add_note"
+            app:destination="@id/add_note" />
+        <action
+            android:id="@+id/action_task_list_to_note_media"
+            app:destination="@id/note_media" />
+    </fragment>
+    <fragment
+        android:id="@+id/note_list"
+        android:name="note_list"
+        android:label="note_list" >
+        <action
+            android:id="@+id/action_note_list_to_mainMenu"
+            app:destination="@id/mainMenu" />
+        <action
+            android:id="@+id/action_note_list_to_add_note"
+            app:destination="@id/add_note" />
+        <action
+            android:id="@+id/action_note_list_to_note_media"
+            app:destination="@id/note_media" />
+    </fragment>
+    <fragment
+        android:id="@+id/note_media"
+        android:name="com.example.proyecto_notas.note_media"
+        android:label="fragment_note_media"
+        tools:layout="@layout/fragment_note_media" >
+        <action
+            android:id="@+id/action_note_media_to_task_list"
+            app:destination="@id/task_list" />
+        <action
+            android:id="@+id/action_note_media_to_note_list"
+            app:destination="@id/note_list" />
+    </fragment>
+</navigation>
